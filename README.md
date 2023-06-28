@@ -15,4 +15,5 @@ Questa è la repo per il sito web della Scuola Open Source.
 - Alessandro Tartaglia
 - Giovanni Abbatepaolo
 - Pasquale de Sario
-- Nicolò
+- Nicolò Ceci
+- Alberto Guerra
