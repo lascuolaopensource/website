@@ -10,6 +10,7 @@ Questa è la repo per il sito web della Scuola Open Source.
 
 - lanciare il comando `php -S localhost:8000 kirby/router.php `
 
-## Contributors
+## Credits
 
-Giovanni
+- Alessandro Tartaglia
+- Giovanni Abbatepaolo
