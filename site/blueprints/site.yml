@@ -1,0 +1,15 @@
+title: site
+unlisted: true
+
+options:
+  changeTemplate:
+    - default
+    - collezione
+    - evento
+    - progetto
+
+tabs:
+  #
+  contents: tabs/contents
+  #
+  impostazioni: tabs/impostazioni

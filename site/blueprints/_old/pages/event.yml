@@ -1,0 +1,12 @@
+title: Event
+icon: dashboard
+
+tabs:
+  #
+  anteprima: fields/event_details
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+
+ 

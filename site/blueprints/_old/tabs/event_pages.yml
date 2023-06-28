@@ -1,0 +1,16 @@
+label: Pagine
+icon: document
+
+sections:
+
+  drafts:
+    label: Eventi in bozza
+    type: pages
+    status: draft
+    templates: event
+
+  published:
+    label: Eventi pubblicati
+    type: pages
+    status: listed
+    templates: event

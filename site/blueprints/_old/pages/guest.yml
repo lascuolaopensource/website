@@ -1,0 +1,11 @@
+title: Guest
+icon: dashboard
+
+tabs:
+  #
+  anteprima: fields/guest_details
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+

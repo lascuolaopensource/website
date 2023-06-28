@@ -1,0 +1,168 @@
+label: Impostazioni
+icon: settings
+      
+sections:
+  #
+  section_logo:
+    headline: Utilità dati
+    type: fields
+    fields:
+      intro_utility:
+        label: Cosa trovo qui?
+        type: info
+        text: In questa sezione trovi logo, menu, categorie, footer
+      #
+      divider_0:
+        type: line
+      #
+      logotype:
+        label: Logo tipografico
+        type: text
+        width: 1/2
+      #
+      logo:
+        label: Logo Header
+        type: files
+        width: 1/2
+        max: 1
+        help: Carica il logo <b>in formato .SVG</b>
+      #
+      separator_1:
+        type: line
+      #
+      menu:
+        type: structure
+        label: Menu
+        width: 1/1
+        fields:
+          isExternal:
+            type: toggle
+            label: Link esterno?
+            when:
+              hasSubmenu: false
+          linkTitle:
+            type: text
+            label: Titolo del link
+            when:
+              hasSubmenu: false
+          pageLink:
+            label: Pagina associata
+            type: pages
+            max: 1
+            when:
+              isExternal: false
+              hasSubmenu: false
+          externalLink:
+            type: url
+            label: Link associato
+            when:
+              isExternal: true     
+              hasSubmenu: false
+          hasSubmenu:
+            type: toggle
+            text: Attiva sotto-menu
+          submenu:
+            type: structure
+            label: Oggetti di secondo livello
+            when:
+              hasSubmenu: true
+            fields:
+              menufields: fields/menufields
+      #
+      separator_2:
+        type: line
+      #
+      ruoli:
+        label:  Ruoli
+        type: structure
+        width: 1/2
+        fields:
+          nome:
+            label: Nome del ruolo
+            type: text  
+      #
+      categorie:
+        label:  Categorie
+        type: structure
+        width: 1/2
+        fields:
+          nome:
+            label: Nome della categoria
+            type: text  
+  #
+  section_footer:
+    headline: Footer 
+    type: fields
+    fields:
+    #
+    ## Footer
+    #
+      #
+      separator_3:
+        type: line
+      #
+      footer:
+        type: layout
+        settings: fields/settings
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+          - "1/4, 1/2, 1/4"
+          - "1/3, 1/3, 1/3"
+          - "1/4, 1/4, 1/4, 1/4"
+          - "1/3, 2/3"
+          - "2/3, 1/3"
+          - "1/4, 1/4, 1/2"
+          - "1/2, 1/4, 1/4"
+
+        fieldsets:
+          text:
+            label: Typography
+            type: group
+            fieldsets:
+              - heading
+              - text
+              - line
+              - list
+              - accordion
+              - faq
+              - box
+          special:
+            label: Special
+            type: group
+            fieldsets:
+              - cta
+              - card
+              - slider
+              - testimonial
+              - capolettera
+              - texture
+          media:
+            label: Media
+            type: group
+            fieldsets:
+              - image
+              - video
+              - localvideo
+          code:
+            label: Code
+            type: group
+            fieldsets:
+              - code
+              - markdown
+  #
+  section_extra:
+    headline: Extra 
+    type: fields
+    fields:
+    #
+    ## Extra
+    #
+      #
+      separator_4:
+        type: line
+      #
+      marker:
+        label: Svg del marker per le mappe
+        type: files
+        max: 1

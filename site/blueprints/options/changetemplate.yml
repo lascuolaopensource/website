@@ -1,0 +1,10 @@
+changeTemplate:
+    - default
+    - collezione
+    - evento
+    - progetto
+    - corso
+    - notizia 
+    - organizzazione
+    - persona
+    - output

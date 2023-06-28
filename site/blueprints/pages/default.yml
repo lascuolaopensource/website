@@ -1,0 +1,15 @@
+title: Default Page
+icon: dashboard
+
+options: options/changetemplate
+
+tabs:
+  #
+  contenuto: fields/layout
+  #
+  proprieta: fields/proprieta
+  #
+  sottopagine: tabs/pagine
+  #
+  configurazione: fields/configurazione
+

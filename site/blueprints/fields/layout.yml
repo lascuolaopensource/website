@@ -1,0 +1,62 @@
+icon: text-left
+fields:
+  intro_layout:
+    label: Cosa trovo qui?
+    type: info
+    text: Un sistema per comporre il contenuto della pagina in modo fluido
+
+  layout:
+    label: Contenuto della pagina
+    type: layout
+    help: 🧱 Aggiungi righe e colonne, riempile con blocchi di qualsiasi tipologia
+    settings: fields/settings
+    layouts:
+      - "1/1"
+      - "1/2, 1/2"
+      - "1/4, 1/2, 1/4"
+      - "1/3, 1/3, 1/3"
+      - "1/4, 1/4, 1/4, 1/4"
+      - "1/3, 2/3"
+      - "2/3, 1/3"
+      - "1/4, 1/4, 1/2"
+      - "1/2, 1/4, 1/4"
+
+    fieldsets:
+      text:
+        label: Typography
+        type: group
+        fieldsets:
+          - heading
+          - text
+          - line
+          - list
+          - accordion
+          - faq
+          - box
+      special:
+        label: Special
+        type: group
+        fieldsets:
+          - cta
+          - card
+          - slider
+          - testimonial
+          - capolettera
+          - texture
+      media:
+        label: Media
+        type: group
+        fieldsets:
+          - image
+          - video
+          - localvideo
+      code:
+        label: Code
+        type: group
+        fieldsets:
+          - code
+          - markdown
+
+
+
+

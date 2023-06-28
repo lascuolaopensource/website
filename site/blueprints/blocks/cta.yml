@@ -1,0 +1,37 @@
+name: Cta
+icon: bolt
+label: "{{ switch }}"
+fields:
+  text:
+    type: writer
+    width: 1/2
+  switch:
+    type: radio
+    width: 1/2
+    columns: 3
+    options:
+      - download
+      - url
+      - pagina
+  download:
+    type: files
+    max: 1
+    when:
+      switch: download
+  url:
+    type: text
+    when:
+      switch: url
+  pagina:
+    type: pages
+    max: 1
+    when:
+      switch: pagina
+  class:
+    label: Classe
+    type: multiselect
+    options:
+      margini: margini regolari
+      no_margin: senza margini
+      bg_random-anchor: sfondo del div random
+      cta_big: cta 150%

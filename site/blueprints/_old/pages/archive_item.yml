@@ -1,0 +1,12 @@
+title: Archive Item
+icon: dashboard
+
+tabs:
+  #
+  anteprima: fields/archive_item_details
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+
+ 

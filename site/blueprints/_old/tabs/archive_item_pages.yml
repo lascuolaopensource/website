@@ -1,0 +1,17 @@
+label: Pagine
+icon: document
+
+sections:
+
+  drafts:
+    label: Oggetto d'archivio in bozza
+    type: pages
+    status: draft
+    templates: archive_item
+
+  published:
+    label: Oggetto d'archivio pubblicati
+    type: pages
+    status: listed
+    templates: archive_item
+

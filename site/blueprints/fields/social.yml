@@ -1,0 +1,21 @@
+type: group
+fields:
+  #
+  ## Social
+  #
+  social:
+    label: Indica qui i social
+    type: structure
+    fields:
+      url:
+        label: Url
+        type: url
+      nome:
+        label: Quale social?
+        type: radio
+        options:
+          instagram: Instagram
+          facebook: Facebook
+          twitter: Twitter
+          linkedin: Linkedin
+          youtube: Youtube

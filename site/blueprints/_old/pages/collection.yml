@@ -1,0 +1,12 @@
+title: Collection
+icon: box
+#
+tabs:
+  #
+  anteprima: fields/preview_collection
+  #
+  pagine: tabs/item_pages
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo

@@ -1,0 +1,33 @@
+name: Texture
+icon: bolt
+preview: texture
+wysiwyg: true
+fields:
+  text_size:
+    label: Corpo del testo (vw)
+    type: number
+    width: 1/2
+  inner_margin:
+    label: Margini interni con unità di misura
+    type: number
+    width: 1/2
+  max_height:
+    label: Valore dell'altezza massima
+    type: number
+    width: 1/2
+  custom_colors:
+    label: Personalizza colori 
+    type: toggle    
+    width: 1/2
+  color:
+    label: Esadecimale LETTERA [es. "#1c191b"]
+    type: text
+    width: 1/2
+    when:
+      custom_colors: true
+  background:
+    label: Esadecimale SFONDO [es. "#ffffff"]
+    type: text
+    width: 1/2
+    when:
+      custom_colors: true

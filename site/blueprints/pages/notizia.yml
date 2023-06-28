@@ -1,0 +1,24 @@
+title: Notizia
+icon: chat
+
+options: options/changetemplate
+
+tabs:
+  #
+  proprieta: fields/proprieta
+  #
+  contenuto: fields/layout
+  #
+  configurazione: 
+    extends: fields/configurazione
+    fields:
+      date_toggle:
+        default: true
+      ruoli_toggle:
+        default: true
+      categorie_toggle:
+        default: true
+      correlati_toggle:
+        default: true
+
+

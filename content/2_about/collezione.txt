@@ -1,0 +1,61 @@
+Title: About
+
+----
+
+Uuid: a0bYTpgI7cWlQ6EC
+
+----
+
+Date-toggle: false
+
+----
+
+Ruoli-toggle: false
+
+----
+
+Categorie-toggle: false
+
+----
+
+Costo-toggle: false
+
+----
+
+Url-iscrizione-toggle: false
+
+----
+
+Indirizzo-toggle: false
+
+----
+
+Correlati-toggle: false
+
+----
+
+Descrizione: 
+
+----
+
+Immagine: 
+
+----
+
+Date: 
+
+----
+
+Ruoli: 
+
+----
+
+Categorie: 
+
+----
+
+Correlati: 
+
+----
+
+Layout: 

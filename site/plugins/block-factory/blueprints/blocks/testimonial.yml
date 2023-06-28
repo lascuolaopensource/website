@@ -1,0 +1,27 @@
+name: Testimonial
+icon: account
+preview: testimonial
+fields:
+  quote:
+    label: Quote
+    type: writer
+    marks: false
+    inline: false
+  image:
+    label: Company logo or portrait
+    type: files
+    layout: list
+    max: 1
+  name:
+    type: writer
+    inline: true
+    marks: false
+  jobPosition:
+    type: writer
+    label: Job Position
+    inline: true
+    marks: false
+  company:
+    type: writer
+    inline: true
+    marks: false

@@ -1,0 +1,17 @@
+label: Pagine
+icon: document
+
+sections:
+
+  drafts:
+    label: Ospiti in bozza
+    type: pages
+    status: draft
+    templates: guest
+
+  published:
+    label: Ospiti pubblicati
+    type: pages
+    status: listed
+    templates: guest
+

@@ -1,0 +1,13 @@
+title: Archive_items
+icon: file-document
+#
+tabs:
+  #
+  anteprima: fields/preview_collection
+  #
+  pagine: tabs/archive_item_pages
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+ 

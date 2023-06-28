@@ -1,0 +1,74 @@
+Title: La Scuola Open Source
+
+----
+
+Logotype: 
+
+----
+
+Logo: 
+
+----
+
+Menu: 
+
+----
+
+Ruoli:
+
+- 
+  nome: General manager
+- 
+  nome: Docente
+- 
+  nome: Partner
+
+----
+
+Categorie:
+
+- 
+  nome: Graphic design
+- 
+  nome: Typi pigry
+
+----
+
+Footer: 
+
+----
+
+Marker: 
+
+----
+
+Partner: 
+
+----
+
+Logo-switch: logo
+
+----
+
+Bg-random: false
+
+----
+
+Entita:
+
+- 
+  nome: Corso
+- 
+  nome: Percorso
+- 
+  nome: Progetto
+- 
+  nome: Persona
+- 
+  nome: Output
+- 
+  nome: Luogo
+- 
+  nome: Organizzazione
+- 
+  nome: Evento

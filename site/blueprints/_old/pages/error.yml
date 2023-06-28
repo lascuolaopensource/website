@@ -1,0 +1,11 @@
+title: Error Page
+status: listed
+icon: wand
+tabs:
+  #
+  anteprima: fields/preview_general
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+

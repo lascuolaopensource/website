@@ -1,0 +1,18 @@
+name: Box
+icon: box
+preview: box
+wysiwyg: true
+fields:
+  boxType:
+    label: Box Type
+    type: radio
+    default: text
+    options:
+      - text
+      - bolt
+      - alert
+      - neutral
+  text:
+    label: Text
+    type: writer
+    placeholder: Enter some text…

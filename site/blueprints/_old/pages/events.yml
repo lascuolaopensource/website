@@ -1,0 +1,13 @@
+title: Events
+icon: calendar
+#
+tabs:
+  #
+  anteprima: fields/preview_collection
+  #
+  pagine: tabs/event_pages
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+ 

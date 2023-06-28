@@ -1,0 +1,13 @@
+title: Locations
+icon: pin
+#
+tabs:
+  #
+  anteprima: fields/preview_collection
+  #
+  pagine: tabs/location_pages
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+ 

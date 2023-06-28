@@ -1,0 +1,69 @@
+Title: Eventi
+
+----
+
+Date-toggle: false
+
+----
+
+Ruoli-toggle: false
+
+----
+
+Categorie-toggle: false
+
+----
+
+Costo-toggle: false
+
+----
+
+Url-iscrizione-toggle: false
+
+----
+
+Indirizzo-toggle: false
+
+----
+
+Correlati-toggle: false
+
+----
+
+Descrizione: 
+
+----
+
+Immagine: 
+
+----
+
+Date: 
+
+----
+
+Ruoli: 
+
+----
+
+Categorie: 
+
+----
+
+Indirizzo: 
+
+----
+
+Url-iscrizione: 
+
+----
+
+Correlati: 
+
+----
+
+Layout: 
+
+----
+
+Uuid: pBmoqtZa1wyISZyA

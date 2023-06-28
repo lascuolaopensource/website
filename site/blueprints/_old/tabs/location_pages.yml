@@ -1,0 +1,17 @@
+label: Pagine
+icon: document
+
+sections:
+
+  drafts:
+    label: Luoghi in bozza
+    type: pages
+    status: draft
+    templates: location
+
+  published:
+    label: Luoghi pubblicati
+    type: pages
+    status: listed
+    templates: location
+

@@ -1,0 +1,69 @@
+Title: evento test
+
+----
+
+Immagine: 
+
+----
+
+Descrizione: 
+
+----
+
+Date: 
+
+----
+
+Ruoli: 
+
+----
+
+Categorie: 
+
+----
+
+Correlati: 
+
+----
+
+Indirizzo: 
+
+----
+
+Url-iscrizione: 
+
+----
+
+Layout: 
+
+----
+
+Date-toggle: true
+
+----
+
+Ruoli-toggle: true
+
+----
+
+Categorie-toggle: true
+
+----
+
+Costo-toggle: true
+
+----
+
+Url-iscrizioni-toggle: true
+
+----
+
+Indirizzo-toggle: true
+
+----
+
+Correlati-toggle: true
+
+----
+
+Uuid: Lig63YpvPD8SFxiC

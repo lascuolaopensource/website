@@ -1,0 +1,27 @@
+label: Contenuti
+icon: document
+
+sections:
+  #
+  intro_pagine:
+    label: Cosa trovo qui?
+    type: info
+    text: In questa sezione trovi tutte le pagine
+  #
+  section_pagine:
+    headline: Gestione delle pagine
+    type: fields
+    fields:      
+      pagine_headline:
+        label: Gestione delle pagine
+        type: headline
+  #
+  pages:
+    headline: Crea o modifica una pagina [o una sotto-pagina al suo interno]
+    type: pages
+    status: all
+    layout: list
+    image:
+      cover: true
+      ratio: 3/1
+      query: page.cover.toFile

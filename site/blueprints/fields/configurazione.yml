@@ -1,0 +1,51 @@
+icon: toggle-on
+type: group
+
+fields:
+
+  intro_toggle:
+    label: Cosa trovo qui?
+    type: info
+    text: In questa sezione puoi attivare/disattivare dei campi
+
+  date_toggle:
+    label: Date
+    type: toggle
+    default: false
+    width: 1/3
+
+  ruoli_toggle:
+    label: Ruoli
+    type: toggle
+    default: false
+    width: 1/3
+
+  categorie_toggle:
+    label: Categorie
+    type: toggle
+    default: false
+    width: 1/3
+
+  costo_toggle:
+    label: Costo
+    type: toggle
+    default: false
+    width: 1/3
+
+  url_iscrizioni_toggle:
+    label: Url per le iscrizioni
+    type: toggle
+    default: false
+    width: 1/3
+
+  indirizzo_toggle:
+    label: Indirizzo
+    type: toggle
+    default: false
+    width: 1/3
+
+  correlati_toggle:
+    label: Correlati
+    type: toggle
+    default: false
+    width: 1/3

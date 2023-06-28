@@ -1,0 +1,11 @@
+title: Item
+icon: dashboard
+
+tabs:
+  #
+  anteprima: fields/item_details
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+

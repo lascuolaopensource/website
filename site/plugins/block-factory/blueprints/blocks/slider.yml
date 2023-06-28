@@ -1,0 +1,28 @@
+name: Slider
+icon: image
+fields:
+  cardType:
+    label: Card Type
+    type: radio
+    default: pages
+    width: 1/2
+    options:
+      pages: Create card from pages
+  pages:
+    label: Pagine 
+    type: pages
+    width: 1/2
+  direction:
+    label: Direzione dello slider
+    type: radio
+    columns: 2
+    width: 1/2
+    options:
+      vertical: vertical
+      horizontal: horizontal
+    default: horizontal
+  arrow:
+    width: 1/2
+    label: Comandi visibili 
+    type: toggle
+

@@ -1,0 +1,10 @@
+title: Home Page
+icon: dashboard
+
+tabs:
+  anteprima: fields/preview_general
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo
+

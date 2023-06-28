@@ -1,0 +1,43 @@
+name: Card
+icon: image
+fields:
+  zoom:
+    label: Zooming when hover
+    type: toggle
+    width: 1/2
+  cardType:
+    label: Card Type
+    type: radio
+    default: page
+    width: 1/2
+    options:
+      page: Create card from page
+      manual: Create manual card
+  page:
+    type: pages
+    max: 1
+    when:
+      cardType: page
+  link:
+    type: url
+    when:
+      cardType: manual
+  image:
+    label: Image
+    type: files
+    uploads: image
+    when:
+      cardType: manual
+  seo_title:
+    label: Heading
+    inline: true
+    marks: false
+    type: writer
+    when:
+      cardType: manual
+  seo_text:
+    label: Text
+    type: writer
+    marks: false
+    when:
+      cardType: manual

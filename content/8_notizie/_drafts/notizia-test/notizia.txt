@@ -1,0 +1,69 @@
+Title: Notizia test
+
+----
+
+Descrizione: 
+
+----
+
+Immagine: 
+
+----
+
+Date: 
+
+----
+
+Ruoli: 
+
+----
+
+Categorie: 
+
+----
+
+Indirizzo: 
+
+----
+
+Url-iscrizione: 
+
+----
+
+Correlati: 
+
+----
+
+Layout: 
+
+----
+
+Date-toggle: true
+
+----
+
+Ruoli-toggle: true
+
+----
+
+Categorie-toggle: true
+
+----
+
+Costo-toggle: false
+
+----
+
+Url-iscrizione-toggle: false
+
+----
+
+Indirizzo-toggle: false
+
+----
+
+Correlati-toggle: true
+
+----
+
+Uuid: lTv8QhXElfxJPqMV

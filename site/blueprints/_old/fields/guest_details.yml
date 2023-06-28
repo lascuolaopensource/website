@@ -1,0 +1,86 @@
+type: group
+fields:
+  #
+  ## General
+  #
+  item_details_label:
+    label: Scheda sintetica per l'ospite
+    type: headline
+  #
+  titolo:
+    label: Nome e cognome dell'ospite
+    type: text
+    width: 1/2
+  #
+  tipologia:
+    label: Professione
+    type: multiselect
+    width: 1/2 
+    options: query
+    query:
+      fetch: site.relationship_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"
+  #
+  thumb_switch:
+    label: Anteprima
+    type: select
+    width: 1/4
+    min: 1
+    max: 1
+    default: cover
+    options:
+      cover: cover
+      video: video
+
+  cover:
+    label: Immagine di copertina
+    type: files
+    max: 1
+    width: 3/4
+    layout: cards
+    size: large
+    accept:
+        extension: jpg, png, gif
+    image:
+      cover: true
+    when:
+      thumb_switch: cover
+
+  video:
+    label: Video di copertina
+    type: files
+    max: 1
+    width: 3/4
+    layout: cards
+    size: large
+    when:
+      thumb_switch: video
+    accept:
+        extension: mov, mp4
+  #
+  descrizione:
+    label: Bio sintetica (300 caratteri)
+    type: textarea
+    size: medium
+    maxlength: 300
+  #
+  organizzazione:
+    label: Organizzazione di appartenenza
+    type: multiselect
+    width: 1/2
+    options: query
+    query:
+      fetch: site.organization_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"
+  #
+  topic:
+    label: Temi trattati
+    type: multiselect
+    width: 1/2
+    options: query
+    query:
+      fetch: site.topic_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"

@@ -1,0 +1,61 @@
+Title: test corso
+
+----
+
+Descrizione: 
+
+----
+
+Immagine: 
+
+----
+
+Date: 
+
+----
+
+Ruoli: 
+
+----
+
+Categorie: 
+
+----
+
+Indirizzo: 
+
+----
+
+Correlati: 
+
+----
+
+Layout: 
+
+----
+
+Date-toggle: true
+
+----
+
+Ruoli-toggle: true
+
+----
+
+Categorie-toggle: true
+
+----
+
+Costo-toggle: true
+
+----
+
+Indirizzo-toggle: true
+
+----
+
+Correlati-toggle: true
+
+----
+
+Uuid: B9oTB5gVTR1s5a9X

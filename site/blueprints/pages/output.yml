@@ -1,0 +1,30 @@
+title: Output
+icon: box
+
+options: options/changetemplate
+
+tabs:
+  #
+  proprieta: fields/proprieta
+  #
+  contenuto: fields/layout
+  #
+  sottopagine: tabs/pagine
+  #
+  configurazione: 
+    extends: fields/configurazione
+    fields:
+      date_toggle:
+        default: true
+      ruoli_toggle:
+        default: true
+      indirizzo_toggle:
+        default: true
+      costo_toggle:
+        default: true
+      categorie_toggle:
+        default: true
+      correlati_toggle:
+        default: true
+
+

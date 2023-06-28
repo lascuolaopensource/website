@@ -1,0 +1,13 @@
+name: Faq
+icon: question
+fields:
+  heading:
+    label: Section Heading
+    type: writer
+    inline: true
+    marks: false
+  faq:
+    label: FAQ
+    type: blocks
+    fieldsets:
+      - accordion

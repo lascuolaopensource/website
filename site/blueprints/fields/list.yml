@@ -1,0 +1,7 @@
+type: structure
+fields:
+  item:
+    label: Item
+    type: text
+sortBy: item
+sortable: false

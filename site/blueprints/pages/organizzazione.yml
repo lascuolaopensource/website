@@ -1,0 +1,20 @@
+title: Organizzazione
+icon: users
+
+options: options/changetemplate
+
+tabs:
+  #
+  proprieta: fields/proprieta
+  #
+  contenuto: fields/layout
+  #
+  configurazione: 
+    extends: fields/configurazione
+    fields:
+      date_toggle:
+        default: true    
+      indirizzo_toggle:
+        default: true
+      categorie_toggle:
+        default: true

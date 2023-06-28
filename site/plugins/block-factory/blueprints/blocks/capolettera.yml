@@ -1,0 +1,35 @@
+name: Capolettera
+icon: bolt
+preview: capolettera
+wysiwyg: true
+fields:
+  bg_random:
+    label: Sfondo cangiante?
+    type: toggle
+    width: 1/2
+  multiplier:
+    label: Moltiplicatore di larghezza
+    type: number
+    width: 1/2
+    required: true
+  text:
+    label: Text
+    type: writer
+    width: 1/2
+    placeholder: Inserisci una stringa di testo…
+  custom_colors:
+    label: Personalizza colori
+    type: toggle    
+    width: 1/2
+  color:
+    label: Esadecimale LETTERA [es. "#1c191b"]
+    type: text
+    width: 1/2
+    when:
+      custom_colors: true
+  background:
+    label: Esadecimale SFONDO [es. "#ffffff"]
+    type: text
+    width: 1/2
+    when:
+      custom_colors: true

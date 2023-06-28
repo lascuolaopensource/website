@@ -1,0 +1,105 @@
+type: group
+fields:
+  #
+  ## General
+  #
+  item_details_label:
+    label: Scheda sintetica per l'evento
+    type: headline
+  #
+  titolo:
+    label: Titolo evento
+    type: text
+    width: 1/2
+  #
+  tipologia: 
+    label: Tipologia di evento
+    type: multiselect
+    width: 1/2 
+    options: query
+    query:
+      fetch: site.content_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"
+  #
+  thumb_switch:
+    label: Anteprima
+    type: select
+    width: 1/4
+    min: 1
+    max: 1
+    default: cover 
+    options:
+      cover: cover
+      video: video
+
+  cover:
+    label: Immagine di copertina
+    type: files
+    max: 1
+    width: 3/4
+    layout: cards
+    size: large
+    accept:
+      extension: jpg, png, gif
+    image:
+      cover: true
+    when:
+      thumb_switch: cover
+
+  video:
+    label: Video di copertina
+    type: files
+    max: 1
+    width: 3/4
+    layout: cards
+    size: large
+    when:
+      thumb_switch: video
+    accept:
+        extension: mov, mp4
+  #
+  descrizione:
+    label: Descrizione dell'evento in breve (300 caratteri)
+    type: textarea
+    size: medium
+    maxlength: 300
+  #
+  date:
+    label: Data 
+    type: multiselect
+    options: query
+    query:
+      fetch: site.time_category.toStructure
+      text: "{{ structureItem.day }}"
+      value: "{{ structureItem.day }}"
+    width: 1/4 
+  #
+  luogo:
+    label: Luogo
+    type: multiselect
+    width: 1/4
+    max: 1
+    options: 
+      type: query
+      query: site.children.listed.template('locations').children
+      text: " {{ page.titolo }}"
+      value: "{{ page.titolo }}"
+  #
+  ospiti:
+    label: Ospiti
+    type: multiselect
+    width: 1/4
+    options: 
+      type: query
+      query: site.children.listed.template('guests').children 
+  #
+  topic:
+    label: Temi trattati
+    type: multiselect
+    width: 1/4
+    options: query
+    query:
+      fetch: site.topic_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"

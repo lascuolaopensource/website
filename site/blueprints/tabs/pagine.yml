@@ -1,0 +1,19 @@
+label: Sottopagine
+icon: folder-structure
+
+sections:
+  intro_pagine:
+    label: Cosa trovo qui?
+    type: info
+    text: Le sotto-pagine di questo contenuto
+
+  bozze:
+    label: 📝 Bozze di contenuti
+    type: pages
+    status: draft
+
+  pubblicati:
+    label: 📚 Contenuti pubblicati
+    type: pages
+    status: listed
+    text: "{{ page.blueprint.name }} – {{ page.title }}"

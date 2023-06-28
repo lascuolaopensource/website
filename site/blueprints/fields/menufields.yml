@@ -1,0 +1,20 @@
+type: group
+fields:
+  isExternal:
+    type: toggle
+    label: Link esterno?
+  linkTitle:
+    type: text
+    label: Titolo del link
+  pageLink:
+    label: Pagina associata
+    type: pages
+    max: 1
+    when:
+      isExternal: false
+  externalLink:
+    type: url
+    label: Link associato
+    when:
+      isExternal: true
+

@@ -1,0 +1,12 @@
+title: Guests
+icon: users
+#
+tabs:
+  #
+  anteprima: fields/preview_collection
+  #
+  pagine: tabs/guest_pages
+  #
+  contenuto: fields/layout
+  #
+  seo: tabs/seo

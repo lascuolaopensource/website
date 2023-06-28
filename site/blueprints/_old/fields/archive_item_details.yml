@@ -1,0 +1,88 @@
+type: group
+fields:
+  #
+  ## General
+  #
+  item_details_label:
+    label: Scheda sintetica per l'oggetto in archivio
+    type: headline
+  #
+  titolo:
+    label: Titolo oggetto 
+    type: text
+    width: 1/3
+  #
+  tipologia: 
+    label: Tipologia di oggetto
+    type: multiselect
+    width: 1/3
+    options: query
+    query:
+      fetch: site.content_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"
+  #
+  thumb_switch:
+    label: Anteprima
+    type: select
+    width: 1/3
+    min: 1
+    max: 1
+    default: cover
+    options:
+      cover: cover
+      video: video
+
+  cover:
+    label: Immagine di copertina
+    type: files
+    max: 1
+    layout: cards
+    size: large
+    accept:
+        extension: jpg, png, gif
+    image:
+      cover: true
+    when:
+      thumb_switch: cover
+
+  video:
+    label: Video di copertina
+    type: files
+    max: 1
+    layout: cards
+    size: large
+    when:
+      thumb_switch: video
+    accept:
+        extension: mov, mp4
+  #
+  descrizione:
+    label: Descrizione dell'oggetto in breve (300 caratteri)
+    type: textarea
+    size: medium
+    maxlength: 300
+  #
+  quando:
+    label: Data 
+    type: date
+    display: DD/MM/YYYY
+    width: 1/3 
+  #
+  ospiti:
+    label: Ospiti
+    type: multiselect
+    width: 1/3
+    options: 
+      type: query
+      query: site.children.listed.template('guests').children 
+  #
+  topic:
+    label: Temi trattati
+    type: multiselect
+    width: 1/3
+    options: query
+    query:
+      fetch: site.topic_category.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.nome }}"

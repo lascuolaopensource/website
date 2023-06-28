@@ -1,0 +1,44 @@
+label: SEO
+
+sections:
+  kirby_seo:
+    type: fields
+    fields:
+      seo_label:
+        label: Informazioni per i motori di ricerca
+        type: headline
+      #
+      seo_title:
+        label: Titolo SEO
+        type: text
+      #
+      gap_seo_title:
+        type: gap
+      #
+      seo_text:
+        label: Descrizione SEO
+        type: textarea
+        buttons: false
+        size: medium
+      #
+      gap_seo_text:
+        type: gap
+      #
+      seo_images:
+        label: Immagini SEO
+        type: files
+        max: 1
+      #
+      gap_seo_images:
+        type: gap
+      #
+      seo_org:
+        label: Organizzazione SEO
+        type: text
+      #
+      seo_url:
+        label: URL dell'organizzazione
+        type: url
+      #
+      gap_seo_org:
+        type: gap

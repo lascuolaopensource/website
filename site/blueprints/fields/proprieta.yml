@@ -1,0 +1,195 @@
+type: group
+icon: document
+
+fields:
+
+  intro_proprieta:
+    label: Cosa trovo qui?
+    type: info
+    text: Le proprietà base del contenuto
+
+  immagine:
+    label: Immagine di copertina
+    type: files
+    max: 1
+    accept: image/jpeg, image/png, image/gif
+    help: Questa immagine sarà usata anche per la SEO <br><strong>✨ puoi usare anche una <strong><u>gif</u></strong></strong>
+    layout: list
+    size: medium
+    image:
+      cover: true 
+  
+  descrizione:
+    label: Descrizione 
+    type: textarea
+    size: medium
+    help: Questo testo sarà usato anche per la descrizione SEO<br><strong>⚠️ consigliamo di stare nei <u>300 caratteri</u></strong>
+    counter: true
+
+  line_1:
+    type: line
+
+  date:
+    label: Date
+    help: Qui puoi <strong><u>inserire</u> o <u>modificare</u> una o più <u>date</u></strong> e eventuali <strong><u>orari</u></strong><br>🏷️ puoi associare a date e/o orari <strong><u>eventuali etichette</u></strong>
+    type: structure
+    width: 2/3
+    when:
+      date_toggle: true
+    fields:
+      data: 
+        label: Data
+        type: date
+        display: DD-MM-YYYY
+        width: 1/2
+      etichetta:
+        label: Cosa succede?
+        type: text
+        width: 1/2
+      data_fine: 
+        label: Data di fine
+        type: date
+        display: DD-MM-YYYY
+        when:
+          data_fine_flag: true
+      data_fine_flag:
+        label: Data di fine?
+        type: toggle
+        width: 1/2
+      orari_flag:
+        label: Orari?
+        type: toggle
+        width: 1/2
+      orari: 
+        label: Orari
+        type: structure
+        when: 
+          orari_flag: true
+        fields:
+          orario:
+            label: Ora
+            type: time
+            width: 1/2
+          etichetta:
+            label: Cosa succede?
+            type: text
+            width: 1/2
+  #
+  ruoli:
+    label: Ruoli / Persone e Organizzazioni coinvolte
+    help: Qui puoi <strong><u>gestire</u> le <u>persone</u> <br>🦄 associando a ogni persona uno o più <u>ruoli</u></strong>
+    type: structure
+    width: 1/3
+    when:
+      ruoli_toggle: true
+    fields:
+      soggetto:
+        type: multiselect
+        options: 
+          type: query
+          query: site.index.listed.template(['persona', 'organizzazione']) 
+      ruolo:
+        label: Ruolo
+        type: multiselect
+        options: query
+        query:
+          fetch: site.ruoli.toStructure
+          text: "{{ structureItem.nome }}"
+          value: "{{ structureItem.id }}"
+
+  line_2:
+    type: line
+  #
+  categorie:
+    label: Categorie
+    help: Qui puoi gestire le categorie associate al contenuto.<br><br>Per <strong><u>inserire ulteriori categorie:</u></strong><br>🗂️ <strong><a style="color:darkviolet;" href="/panel/site?tab=impostazioni" target="_blank">gestore delle categorie</a></strong>
+    type: multiselect
+    when:
+      categorie_toggle: true
+    options: query
+    width: 1/2
+    query:
+      fetch: site.categorie.toStructure
+      text: "{{ structureItem.nome }}"
+      value: "{{ structureItem.id }}"
+  #
+  correlati:
+    label: Correlati
+    type: structure
+    help: Qui puoi gestire i <strong>contenuti <u>correlati</u> associati</strong> a questo contenuto <br>🔗 Puoi collegare <strong><u>link esterni</u>, <u>file</u> o <u>pagine</u></strong> di questo sito
+    width: 1/2
+    when:
+      correlati_toggle: true
+    fields:
+      testo:
+        label: Testo di anteprima
+        type: text
+        width: 1/2
+      tipologia:
+        type: radio
+        width: 1/2
+        columns: 3
+        options:
+          - file
+          - url
+          - pagina
+      file:
+        type: files
+        max: 1
+        when:
+          tipologia: file
+      url:
+        type: text
+        when:
+          tipologia: url
+      pagina:
+        type: pages
+        max: 1
+        when:
+          tipologia: pagina
+  #
+  line_3:
+    type: line
+  #
+  indirizzo:
+    label: Luogo
+    type: locator
+    help: Qui puoi gestire l'eventuale <strong><u>indirizzo</u> <br>📌 Aggiungi il <strong><u>nome</u> della strada, il <u>civico</u>, la <u>città</u>, o il <u>cap</u></strong>
+    when:
+      indirizzo_toggle: true
+    liststyle: table
+    language: 'it'
+    display:
+      - lat
+      - lon
+      - number
+      - address
+      - postcode
+      - city
+      - region
+      - country
+    zoom:
+      min: 15
+      default: 12
+      max: 18
+    width: 1/3
+  #
+  costo:
+    label: Costo
+    type: number
+    help: Qui puoi gestire l'eventuale <strong><u>costo</u> <br>💸 Il valore è espresso in <strong><u>euro</u></strong> secondo il <strong>formato <u>"0,00"</u></strong>
+    when:
+      costo_toggle: true
+    width: 1/3
+    step: .01
+    placeholder: 0,00
+    after: €
+  #
+  url_iscrizione:
+    label: Url iscrizione
+    type: url
+    help: ⛓️ Qui si può inserire un <strong><u>link</u></strong> in caso ci sia un <strong><u>form</u></strong> collegato
+    when:
+      url_iscrizioni_toggle: true
+    width: 1/3
+  #

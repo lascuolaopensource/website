@@ -1,0 +1,97 @@
+Title: Home
+
+----
+
+Layout: 
+
+----
+
+Descrizione: 
+
+----
+
+Immagine: - file://1ebAJL5YmkSWgcm2
+
+----
+
+Date: 
+
+----
+
+Ruoli: 
+
+----
+
+Categorie: 
+
+----
+
+Indirizzo: 
+
+----
+
+Url-iscrizione: 
+
+----
+
+Correlati: 
+
+----
+
+Date-toggle: true
+
+----
+
+Ruoli-toggle: false
+
+----
+
+Categorie-toggle: false
+
+----
+
+Costo-toggle: false
+
+----
+
+Url-iscrizione-toggle: false
+
+----
+
+Indirizzo-toggle: false
+
+----
+
+Correlati-toggle: false
+
+----
+
+Entita: Evento
+
+----
+
+Seo-title: 
+
+----
+
+Seo-text: 
+
+----
+
+Seo-images: 
+
+----
+
+Seo-org: 
+
+----
+
+Seo-url: 
+
+----
+
+Nome: 
+
+----
+
+Uuid: k7hWiW89Bp3dWDwn
