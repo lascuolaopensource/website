@@ -1,7 +1,7 @@
 title: Corso
 icon: shuffle
 
-options: options/changetemplate
+options: options/changeTemplate
 
 tabs:
   #
@@ -11,7 +11,7 @@ tabs:
   #
   sottopagine: tabs/pagine
   #
-  configurazione: 
+  configurazione:
     extends: fields/configurazione
     fields:
       date_toggle:
@@ -28,5 +28,3 @@ tabs:
         default: true
       correlati_toggle:
         default: true
-
-

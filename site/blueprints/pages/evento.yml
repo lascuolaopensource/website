@@ -1,7 +1,7 @@
 title: Evento
 icon: calendar
 
-options: options/changetemplate
+options: options/changeTemplate
 
 tabs:
   #
@@ -11,7 +11,7 @@ tabs:
   #
   sottopagine: tabs/pagine
   #
-  configurazione: 
+  configurazione:
     extends: fields/configurazione
     fields:
       date_toggle:
@@ -26,5 +26,3 @@ tabs:
         default: true
       categorie_toggle:
         default: true
-
-

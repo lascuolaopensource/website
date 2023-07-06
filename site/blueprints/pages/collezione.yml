@@ -1,15 +1,14 @@
 title: Collezione
 icon: grid
 
-options: options/changetemplate
+options: options/changeTemplate
 
 tabs:
   #
-  sottopagine: tabs/pagine  
+  sottopagine: tabs/pagine
   #
   configurazione: fields/configurazione
   #
   proprieta: fields/proprieta
   #
   contenuto: fields/layout
-

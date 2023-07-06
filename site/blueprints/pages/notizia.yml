@@ -1,7 +1,7 @@
 title: Notizia
 icon: chat
 
-options: options/changetemplate
+options: options/changeTemplate
 
 tabs:
   #
@@ -9,7 +9,7 @@ tabs:
   #
   contenuto: fields/layout
   #
-  configurazione: 
+  configurazione:
     extends: fields/configurazione
     fields:
       date_toggle:
@@ -20,5 +20,3 @@ tabs:
         default: true
       correlati_toggle:
         default: true
-
-
