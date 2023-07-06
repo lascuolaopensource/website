@@ -5,7 +5,7 @@ options: options/changeTemplate
 
 tabs:
   #
-  sottopagine: tabs/pagine
+  sottopagine: tabs/sottopagine
   #
   configurazione: fields/configurazione
   #

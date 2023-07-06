@@ -9,7 +9,7 @@ tabs:
   #
   contenuto: fields/layout
   #
-  sottopagine: tabs/pagine
+  sottopagine: tabs/sottopagine
   #
   configurazione:
     extends: fields/configurazione
