@@ -1,0 +1,41 @@
+label: Sottopagine
+icon: folder-structure
+
+columns:
+  left:
+    width: 2/3
+    sections:
+      #
+      intro_pagine:
+        label: Cosa trovo qui?
+        type: info
+        text: Le sotto-pagine di questo contenuto
+      #
+      bozze:
+        label: 📝 Bozze di contenuti
+        type: pages
+        status: draft
+        width: 1/2
+      #
+      pubblicati:
+        label: 📚 Contenuti pubblicati
+        type: pages
+        status: listed
+        text: "{{ page.blueprint.name }} – {{ page.title }}"
+        width: 1/2
+
+  right:
+    width: 1/3
+    sections:
+      #
+      viste:
+        type: fields
+        fields:
+          viste:
+            label: Seleziona le viste per le sottopagine
+            type: multiselect
+            options:
+              - timeline
+              - calendario
+              - mappa
+              - griglia

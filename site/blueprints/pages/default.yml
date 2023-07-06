@@ -9,6 +9,6 @@ tabs:
   #
   proprieta: fields/proprieta
   #
-  sottopagine: tabs/pagine
+  sottopagine: tabs/sottopagine
   #
   configurazione: fields/configurazione
